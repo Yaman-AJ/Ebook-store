@@ -1,0 +1,555 @@
+:root {
+  --main-color: #7b8bff;
+  --second-color: #1f2fa7;
+  --font-color: rgb(11, 17, 31);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+p {
+  color: var(--font-color);
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.search-icon {
+  position: relative;
+  right: 30px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.search-container {
+  position: absolute;
+  right: 10%;
+  top: 100px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 7px;
+  border-color: var(--main-color);
+  border-radius: 10px;
+}
+
+.search-results {
+  position: absolute;
+  top: 115%;
+  left: 0;
+  width: 100%;
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: var(--main-color);
+  border: 2px solid #100a52;
+  border-radius: 10px;
+  z-index: 1;
+  display: none;
+}
+
+.search-results-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-results-item img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.search-results-item:hover {
+  background-color: var(--main-color);
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row-books {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 64%;
+  padding: 50px 0 0;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--second-color);
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.header {
+  background: radial-gradient(#fff, #7b8bff);
+}
+
+.header .row {
+  margin-top: 0px;
+}
+
+.btn:hover {
+  background: var(--second-color);
+}
+
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  max-width: 280px;
+  height: 400px;
+}
+
+.col-3 img {
+  width: 100%;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin: 60px auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: var(--font-color);
+}
+
+.title::after {
+  content: "";
+  background: var(--second-color);
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h4 {
+  color: var(--font-color);
+  font-weight: normal;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.rating .fa {
+  color: var(--second-color);
+}
+
+.col-4:hover {
+  transform: translateY(-15px);
+}
+
+/* ---------------footer---------------- */
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+
+.footer p {
+  color: #8a8a8a;
+}
+
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+
+.footer-col-1 {
+  flex-basis: 30%;
+}
+
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-col-3,
+.footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.app-logo {
+  margin-top: 20px;
+}
+
+.app-logo img {
+  width: 140px;
+}
+
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.menu-icon {
+  width: 28px;
+  margin-left: 30px;
+  margin-top: 15px;
+  display: none;
+}
+
+/* ----------------media query for menu---------------- */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    position: absolute;
+    top: 110px;
+    left: 390px;
+    background: #333;
+    width: 40%;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .search-container {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+  }
+
+  #searchInput {
+    width: 70%;
+    padding: 7px;
+    border-color: var(--main-color);
+    border-radius: 10px;
+  }
+
+  .search-results {
+    position: absolute;
+    top: 115%;
+    left: 0;
+    width: 70%;
+    max-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .search-container {
+    position: absolute;
+    top: 110px;
+    right: 1%;
+  }
+
+  #searchInput {
+    width: 200px;
+    padding: 7px;
+    border-color: var(--main-color);
+    border-radius: 10px;
+  }
+
+  .search-results {
+    position: absolute;
+    top: 115%;
+    left: 0;
+    width: 200px;
+    max-height: 250px;
+  }
+
+}
+
+/* -------------------All Ebooks--------------------------- */
+.row-2 {
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+
+select {
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.page-btn {
+  margin: 0 auto 80px;
+}
+
+.page-btn span {
+  display: inline-block;
+  border: 1px solid var(--main-color);
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover {
+  background: var(--second-color);
+  color: #fff;
+}
+
+/* ----------------single book details----------- */
+.single-product {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.single-product .col-2 img {
+  padding: 0;
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.single-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.single-product input:focus {
+  outline: none;
+}
+
+.single-product .fa {
+  color: var(--second-color);
+  margin-left: 10px;
+}
+
+/* -------------------account-paage------------------ */
+.account-page {
+  padding: 50px 0;
+  background: radial-gradient(#fff, var(--main-color));
+}
+
+.form-container {
+  background: #fff;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: var(--font-color);
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+  transition: 1s;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+#signInForm {
+  left: -300px;
+}
+
+#signUpForm {
+  left: 0px;
+}
+
+form a {
+  font-size: 12px;
+}
+
+#indicator {
+  width: 100px;
+  border: none;
+  background: var(--main-color);
+  height: 3px;
+  margin-top: 8px;
+  transform: translateX(100px);
+  transition: 1s;
+}
+
+/* ----------------media query for Less than 600 screen size---------------- */
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-2,
+  .col-3,
+  .col-4 {
+    flex-basis: 100%;
+  }
+
+  .single-product .row {
+    text-align: left;
+  }
+
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+
+  .single-product .col-2 img {
+    padding: 0;
+    margin-left: 45px;
+  }
+
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .cart-info p {
+    display: none;
+  }
+}
+
+/* --------------------------The End----------------------- */
